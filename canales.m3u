@@ -27,5 +27,5 @@ https://tv2.bitstreaming.net:3576/multi_live/play.m3u8
 https://tv3.bitstreaming.net:3680/live/zuracatvlive.m3u8
 #EXTINF:-1 tvg-id="CTV.bo@SD" group-title="Bolivia | Regionales",CTV
 https://live.ctvbolivia.com/hls/ctv.m3u8
-#EXTINF:-1 tvg-id="BOBTV.ValidacionTemporal" group-title="Validación",PRUEBA TEMPORAL
+#EXTINF:-1 tvg-id="BOBTV.ValidacionTemporal" group-title="Validación",PRUEBA RENOMBRADA
 https://rtp.noxun.net/hls720/stream3.m3u8
