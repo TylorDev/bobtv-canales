@@ -1,8 +1,9 @@
 #EXTM3U
 # Fuente original: https://github.com/iptv-org/iptv/blob/master/streams/bo.m3u
-# Lista inicial aportada por el usuario el 2026-10-13. La disponibilidad depende de cada emisor.
+# Lista inicial aportada por el usuario el 2026-10-13; ampliada con tres fuentes verificadas ese día.
+# Se repiten tvg-id para agrupar fuentes de un mismo canal. La disponibilidad depende de cada emisor.
 #EXTINF:-1 tvg-id="UnitelSantaCruz.bo@SD" group-title="Bolivia | Nacionales",UNITEL Santa Cruz
-https://mdstrm.com/live-stream-playlist/692b7e7ac84183fcf9e3462d.m3u8
+http://190.181.61.93:8000/play/1909/index.m3u8
 #EXTINF:-1 tvg-id="UnitelLaPaz.bo@SD" group-title="Bolivia | Nacionales",UNITEL La Paz
 https://mdstrm.com/live-stream-playlist/6928b14aaa768aad947bf65d.m3u8
 #EXTINF:-1 tvg-id="UnitelCochabamba.bo@SD" group-title="Bolivia | Nacionales",UNITEL Cochabamba
@@ -10,7 +11,7 @@ https://mdstrm.com/live-stream-playlist/691f2aeb5ac95d286c49af8d.m3u8
 #EXTINF:-1 tvg-id="RedUno.bo@SD" group-title="Bolivia | Nacionales",RED UNO
 https://tv.centaurychile.com/interactiva/streams/KIgB6QvZ0L8XaSLd3211668845221245.m3u8
 #EXTINF:-1 tvg-id="RedUnoSantaCruz.bo@SD" group-title="Bolivia | Nacionales",RED UNO Santa Cruz
-http://190.181.18.82:4111/play/a006/index.m3u8
+http://190.181.61.93:8000/play/a002/index.m3u8
 #EXTINF:-1 tvg-id="Bolivision.bo@SD" group-title="Bolivia | Nacionales",BOLIVISIÓN Bolivia
 https://d135ohnuotzzyo.cloudfront.net/index.m3u8
 #EXTINF:-1 tvg-id="BolivisionSantaCruz.bo@SD" group-title="Bolivia | Nacionales",BOLIVISIÓN Santa Cruz
@@ -27,3 +28,11 @@ https://tv2.bitstreaming.net:3576/multi_live/play.m3u8
 https://tv3.bitstreaming.net:3680/live/zuracatvlive.m3u8
 #EXTINF:-1 tvg-id="CTV.bo@SD" group-title="Bolivia | Regionales",CTV
 https://live.ctvbolivia.com/hls/ctv.m3u8
+
+# Fuentes alternativas. Verificación y procedencia: docs/FUENTES_IPTV_2026-10-13.md
+#EXTINF:-1 tvg-id="UnitelSantaCruz.bo@SD" group-title="Bolivia | Nacionales",UNITEL Santa Cruz
+https://mdstrm.com/live-stream-playlist/692b7e7ac84183fcf9e3462d.m3u8
+#EXTINF:-1 tvg-id="RedUno.bo@SD" group-title="Bolivia | Nacionales",RED UNO
+http://190.181.61.93:8000/play/a003/index.m3u8
+#EXTINF:-1 tvg-id="RedUnoSantaCruz.bo@SD" group-title="Bolivia | Nacionales",RED UNO Santa Cruz
+http://190.181.18.82:4111/play/a006/index.m3u8

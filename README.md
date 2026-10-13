@@ -23,7 +23,7 @@ Ejemplo:
     #EXTINF:-1 tvg-id="MiCanal.bo" group-title="Bolivia | Nacionales",Mi canal
     https://ejemplo.com/directo/index.m3u8
 
-- **tvg-id:** identificador único y estable. Consérvalo al cambiar el nombre o la dirección; la app lo usa para recordar el último canal.
+- **tvg-id:** identificador único y estable por canal. Consérvalo al cambiar el nombre o la dirección; la app lo usa para recordar el último canal. Las fuentes alternativas de los canales oficiales de Unitel, Red Uno y Bolivisión repiten el mismo identificador.
 - **group-title:** grupo descriptivo opcional.
 - El nombre después de la coma es el que aparece en la TV. Usa nombres breves y claros.
 - La siguiente línea es la dirección pública de la señal HLS (.m3u8), HTTP o HTTPS.
@@ -32,6 +32,14 @@ Ejemplo:
 - Guarda el archivo como texto UTF-8 y conserva el nombre canales.m3u y la rama main.
 
 No se necesitan usuarios, contraseñas ni tokens de GitHub en el TV box. La app conserva su última lista válida si no puede actualizarla. La reproducción de video sí requiere Internet y que el emisor esté disponible.
+
+## Fuentes alternativas verificadas
+
+El 13 de octubre de 2026 se agregaron **tres fuentes** de Unitel y Red Uno Bolivia tras comprobar HLS, segmentos reales, decodificación de audio/video y avance del directo. El catálogo contiene **13 canales y 16 fuentes**. Consulta la [verificación y los descartes](docs/FUENTES_IPTV_2026-10-13.md) y el [informe JSON](verificacion/fuentes-2026-10-13.json).
+
+Se priorizan las señales nuevas de UNITEL Santa Cruz y RED UNO Santa Cruz. RED UNO mantiene primero su fuente HTTPS con AAC y agrega La Paz como alternativa. Todas las direcciones originales siguen disponibles en el archivo.
+
+BOBTV 2.0 utiliza la primera entrada de cada identificador. El lector de fuentes múltiples de BOBTV 2.1 agrupa las entradas repetidas de estos canales; así las alternativas pertenecen al mismo canal. Las pruebas se realizaron desde el equipo de desarrollo: las señales nuevas de Red Uno tienen audio MP2 y su reproducción en el TV box requiere un decodificador compatible. Unitel presentó incidencias en algunas muestras, aunque completó la comprobación final de 30 segundos.
 
 ## Fuente y disponibilidad
 
