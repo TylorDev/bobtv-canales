@@ -1,0 +1,148 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 19px 22px;
+  border-bottom: 1px solid var(--border);
+}
+.channelIcon {
+  width: 42px;
+  height: 42px;
+  background: #edf2f9;
+  border: 1px solid #e2e8f2;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  color: #546a8b;
+  flex-shrink: 0;
+}
+.identity {
+  flex: 1;
+  min-width: 0;
+  h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+  }
+  p {
+    margin: 5px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    span {
+      margin: 0 5px;
+      color: #a3afbf;
+    }
+  }
+}
+.titleLine {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.number {
+  color: #9ba8b9;
+  font: 11px var(--mono);
+}
+.sources {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.source {
+  padding: 17px 22px 18px;
+  & + & {
+    border-top: 1px dashed var(--border);
+  }
+}
+.sourceTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 11px;
+}
+.priority {
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 1.1px;
+  color: #65758b;
+  span {
+    margin-left: 8px;
+    font-size: 11px;
+    font-weight: 450;
+    letter-spacing: 0;
+    color: #7f8c9e;
+  }
+}
+.urlLine {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #e7ecf2;
+  background: #f7f9fc;
+  border-radius: 5px;
+  padding: 8px 10px;
+  code {
+    flex: 1;
+    min-width: 0;
+    font: 11px/1.6 var(--mono);
+    color: #4b607f;
+    overflow-wrap: anywhere;
+  }
+  a {
+    color: #697b93;
+    display: flex;
+    padding: 4px;
+  }
+}
+.copy {
+  padding: 4px;
+  background: none;
+  border: 0;
+  color: #697b93;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    color: #1b57a8;
+  }
+}
+.diagnostic {
+  font-size: 12px;
+  color: #68778c;
+  line-height: 1.6;
+  margin: 10px 0 8px;
+}
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 10px;
+  color: #69798e;
+  font-variant-numeric: tabular-nums;
+  span + span {
+    border-left: 1px solid #dce3ec;
+    padding-left: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .heading,
+  .source {
+    padding: 15px;
+  }
+  .heading {
+    flex-wrap: wrap;
+  }
+  .identity {
+    min-width: 60%;
+  }
+  .heading > span:last-child {
+    margin-left: 54px;
+  }
+}

@@ -116,3 +116,9 @@ Solo aparecen canales con alguna fuente disponible. Los canales ocultos permanec
 Si se agotan las fuentes, la app registra los errores y muestra **Aceptar y cambiar**. Al aceptar abre el siguiente canal en línea; si ninguno está disponible muestra la lista vacía con sus acciones.
 
 Para copiar el diagnóstico pulsa **Menú → Exportar logs al portapapeles**, o **OK → Configuración → Exportar logs al portapapeles**. Los logs incluyen solo la sesión actual, hasta 2.000 eventos y 256 KiB. Las credenciales y los parámetros de las URLs se ocultan.
+
+## Panel de disponibilidad IPTV
+
+El panel web de este repositorio utiliza `canales.m3u` y publica los resultados de comprobaciones desde GitHub Actions. Consulta las [instrucciones de desarrollo, despliegue y límites del monitor](docs/PANEL_DISPONIBILIDAD.md).
+
+URL prevista: https://tylordev.github.io/bobtv-canales/. El workflow comprueba cada cinco minutos y la página consulta los resultados cada 30 segundos. La programación puede sufrir retrasos; «Disponible» confirma acceso al HLS y a una muestra real de segmento, sin certificar reproducción en el TV Box.

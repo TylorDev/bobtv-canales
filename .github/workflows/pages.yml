@@ -1,0 +1,60 @@
+name: Monitor IPTV y GitHub Pages
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - canales.m3u
+      - src/**
+      - shared/**
+      - monitor/**
+      - tests/**
+      - scripts/**
+      - public/**
+      - package.json
+      - package-lock.json
+      - "*config.ts"
+      - tsconfig.json
+      - index.html
+      - .nvmrc
+      - .github/workflows/pages.yml
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: bobtv-pages
+  cancel-in-progress: false
+jobs:
+  monitor-build-deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      # Neither an invalid catalog nor a global monitor failure reaches upload/deploy.
+      - run: npm run monitor
+      - run: npm run build
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: dist
+      - name: Publicar panel y resultados juntos
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Verificar web, recursos y JSON publicados
+        run: npm run verify:deployment -- "${{ steps.deployment.outputs.page_url }}" public/data/status.json

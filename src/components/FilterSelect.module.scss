@@ -1,0 +1,42 @@
+.trigger {
+  min-width: 190px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 11px 12px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.content {
+  z-index: 20;
+  min-width: var(--radix-select-trigger-width);
+  background: white;
+  padding: 5px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 30px #101f3d20;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  &[data-highlighted] {
+    background: #eef3fb;
+  }
+}
+@media (max-width: 600px) {
+  .trigger {
+    flex: 1;
+    min-width: 0;
+  }
+}
