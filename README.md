@@ -123,4 +123,6 @@ Para copiar el diagnóstico pulsa **Menú → Exportar logs al portapapeles**, o
 
 El panel web de este repositorio utiliza `canales.m3u` y publica los resultados de comprobaciones desde GitHub Actions. Consulta las [instrucciones de desarrollo, despliegue y límites del monitor](docs/PANEL_DISPONIBILIDAD.md).
 
-URL prevista: https://tylordev.github.io/bobtv-canales/. El workflow comprueba cada cinco minutos y la página consulta los resultados cada 30 segundos. La programación puede sufrir retrasos; «Disponible» confirma acceso al HLS y a una muestra real de segmento, sin certificar reproducción en el TV Box.
+**Panel público:** [Abrir disponibilidad de canales BOBTV](https://tylordev.github.io/bobtv-canales/). El workflow comprueba cada cinco minutos y la página consulta los resultados cada 30 segundos. La programación puede sufrir retrasos; «Disponible» confirma acceso al HLS y a una muestra real de segmento, sin certificar reproducción en el TV Box.
+
+El [plan y la verificación de publicación](docs/PLAN_GITHUB_PAGES.md) documentan la habilitación de Pages y la ejecución comprobada.

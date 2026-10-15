@@ -1,6 +1,6 @@
 # Panel de disponibilidad IPTV
 
-Panel previsto: https://tylordev.github.io/bobtv-canales/. El mismo despliegue de Pages contiene la web y `data/status.json`. El catálogo es siempre `canales.m3u` de `main`. No modifica ni requiere el proyecto Android y no incluye reproductor ni historial.
+Panel publicado: [Disponibilidad de canales BOBTV](https://tylordev.github.io/bobtv-canales/). El mismo despliegue de Pages contiene la web y `data/status.json`. El catálogo es siempre `canales.m3u` de `main`. No modifica ni requiere el proyecto Android y no incluye reproductor ni historial.
 
 ## Desarrollo
 
@@ -19,6 +19,8 @@ npm run dev
 Estructura: `shared/` contiene el lector del catálogo y el contrato de datos compartido; `monitor/`, el comprobador y su CLI; `src/components/`, los componentes React y sus SCSS Modules; `src/styles/_tokens.scss`, los tokens de tema. Los selectores accesibles usan Radix UI; los estados se distinguen con texto, icono y color. No se cargan fuentes, scripts ni estilos externos.
 
 ## Publicación en GitHub Pages
+
+La [recuperación del 14 de octubre de 2026](PLAN_GITHUB_PAGES.md) confirmó que el build funcionaba, pero faltaba habilitar Pages. Se configuró el origen `workflow` y se verificó la publicación por HTTP.
 
 En Settings → Pages del repositorio, seleccionar **GitHub Actions** como origen. Requiere administración del repositorio; para utilizar la CLI debe funcionar `gh api repos/TylorDev/bobtv-canales/pages`. Con una sesión autenticada y los permisos correspondientes:
 
