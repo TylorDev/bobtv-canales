@@ -1,0 +1,1835 @@
+{
+  "checked_date_local": "2026-10-14",
+  "timezone": "America/Sao_Paulo",
+  "finished_utc": "2026-10-15T02:59:25.284062+00:00",
+  "repository": "TylorDev/bobtv-canales",
+  "base_commit": "7d85a471be6cebe70574a5fa0193fa943d25d184",
+  "scope": "Alternatives for the existing seven Unitel, Red Uno and Bolivision IDs; other current channels documented only. No Android changes, APKs, new channels, or visual checks.",
+  "catalog": {
+    "channels_before": 13,
+    "channels_after": 13,
+    "sources_before": 16,
+    "sources_after": 16,
+    "sources_added": 0,
+    "byte_for_byte_unchanged": true,
+    "sha256": "af2cb65912ea2c0699404e89e2125f5bf62a50fd33ad5f38c2fc5c14d1773a32"
+  },
+  "outcome": {
+    "expansion_achieved": false,
+    "accepted_sources": [],
+    "decision": "No eligible additional source passed access, AV decoding, live progress and sufficient signal identification. Preserve the catalog; do not classify inconclusive checks as globally offline."
+  },
+  "method": {
+    "user_agent": "BOBTV/2.0",
+    "network_workers_max": 4,
+    "network_timeout_seconds_per_request": 10,
+    "initial_budget_seconds_per_endpoint": 25,
+    "manifest_limit_bytes": 1048576,
+    "initial_segment_sample_limit_bytes": 262144,
+    "decode_tool": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "av_capture": "Consecutive full MPEG-TS segments via Python HTTPS with normal certificate verification; local FFprobe/FFmpeg decoding. Independent, non-overlapping AV captures.",
+    "tls_note": "The portable FFmpeg HTTPS path failed certificate validation, including with the local CA bundle; certificate verification was never disabled. Successful candidate captures used Python HTTPS verification.",
+    "visual_checks_performed": false,
+    "tv_box_test_performed": false
+  },
+  "summary": {
+    "distinct_endpoints_tested": 65,
+    "existing_endpoints": 16,
+    "new_endpoints": 49,
+    "network_results": {
+      "inconclusive": 22,
+      "not_found": 19,
+      "accessible": 21,
+      "restricted": 3
+    },
+    "note": "Tracking-only checkedby query variants are counted once. Accessible means an HLS manifest plus recognizable segment bytes, not decoded or identified television."
+  },
+  "sources_consulted": [
+    {
+      "url": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia%20B.m3u",
+      "checked_utc": "2026-10-15T02:34:34.062970+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw",
+      "checked_utc": "2026-10-15T02:34:34.069830+00:00",
+      "http": 200,
+      "final_url": "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw",
+      "bytes": 11119,
+      "sha256": "2867665d8157ad584795c0d920af0aa376799f01f5b1b389f4baf7ce99f74f97"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u",
+      "checked_utc": "2026-10-15T02:34:34.085746+00:00",
+      "http": 200,
+      "final_url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u",
+      "bytes": 12628,
+      "sha256": "74de4d27b0cfe47c5ab281ee41ddd31bbe15a1d1d89dc365b69cd0a058b4fd2f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "checked_utc": "2026-10-15T02:34:34.088720+00:00",
+      "http": 200,
+      "final_url": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "bytes": 16387,
+      "sha256": "eaa2fb6de3a3d0e800993010f2b66fba72403cd2933ab9457779014c3598315d"
+    },
+    {
+      "url": "https://gist.githubusercontent.com/elfenderes/16ec4ac5b1dfd9d59d02e3f4d9a82d49/raw",
+      "checked_utc": "2026-10-15T02:34:34.151725+00:00",
+      "http": 200,
+      "final_url": "https://gist.githubusercontent.com/elfenderes/16ec4ac5b1dfd9d59d02e3f4d9a82d49/raw",
+      "bytes": 65384,
+      "sha256": "e5047c5c956447efb5a749bb601fbf41c876a991a714b4bbba0b38cc2a34187c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8",
+      "checked_utc": "2026-10-15T02:34:34.174875+00:00",
+      "http": 200,
+      "final_url": "https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8",
+      "bytes": 154166,
+      "sha256": "c0b9871075df8e05e0fbcb9e124c543b61bb9b745419fe7e1becc19d19ac06ab"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RaulBravo343/2023.m3u/main/README.md",
+      "checked_utc": "2026-10-15T02:34:34.198311+00:00",
+      "http": 200,
+      "final_url": "https://raw.githubusercontent.com/RaulBravo343/2023.m3u/main/README.md",
+      "bytes": 93174,
+      "sha256": "556824c5b21422f62e63c563af19552c78c2e8451c98df969163c91d0569b56f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PABLOPOM/m3u/main/TELEVISION9",
+      "checked_utc": "2026-10-15T02:34:34.205546+00:00",
+      "http": 200,
+      "final_url": "https://raw.githubusercontent.com/PABLOPOM/m3u/main/TELEVISION9",
+      "bytes": 43014,
+      "sha256": "7268adbf5212d871eaa3405a2fb6c38f99605ca835a399bfaa3837a764ea244d"
+    },
+    {
+      "url": "https://gist.githubusercontent.com/fiksani/9827055b019258cc5f7988c483e229cf/raw",
+      "checked_utc": "2026-10-15T02:34:34.315946+00:00",
+      "http": 200,
+      "final_url": "https://gist.githubusercontent.com/fiksani/9827055b019258cc5f7988c483e229cf/raw",
+      "bytes": 1690151,
+      "sha256": "5f90ae7c7515998fe5b41535a96862c04375bfd1a74e5acfe216e584225e30b0"
+    },
+    {
+      "url": "https://digital.reduno.com.bo/",
+      "checked_utc": "2026-10-15T02:34:34.828124+00:00",
+      "http": 200,
+      "final_url": "https://digital.reduno.com.bo/",
+      "bytes": 11173,
+      "sha256": "15f0fee2adb26019febdb9a3aa74dd59ac4bc575a5a4ad3ea0938eeb679ec452"
+    },
+    {
+      "url": "https://redbolivision.tv.bo/envivo-canal-4",
+      "checked_utc": "2026-10-15T02:34:34.870143+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://unitel.bo/television/vivo",
+      "checked_utc": "2026-10-15T02:34:35.285654+00:00",
+      "http": 200,
+      "final_url": "https://unitel.bo/television/vivo",
+      "bytes": 87544,
+      "sha256": "1b0ed000c042f64ed75fb0035642ecb0dc2d3e46c05ad5343965ab9211870d33"
+    },
+    {
+      "url": "https://redbolivision.tv.bo/envivo-canal-5",
+      "checked_utc": "2026-10-15T02:34:36.871436+00:00",
+      "http": 200,
+      "final_url": "https://redbolivision.tv.bo/envivo-canal-5",
+      "bytes": 1095060,
+      "sha256": "0a7f15b4a314b85a4c8d6e8c1c24009547a79d0ed5af232e8e41cb39bf8345c8"
+    },
+    {
+      "url": "https://bit.ly/3SSucwl",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://bit.ly/3BXpHcF",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://bit.ly/48aacgO",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://iptv-org.github.io/iptv/countries/bo.m3u",
+      "bytes": 21157
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+      "bytes": 537525
+    },
+    {
+      "url": "https://iptvcat.org/bolivia",
+      "bytes": 322733
+    },
+    {
+      "url": "https://iptvcat.com/bolivia",
+      "result": "Six public Copy m3u8 links resolved without creating a saved list or account."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/codemonchit0/canales-digitales-de-bolivia-iptv-hd/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "result": "No additional eligible national source beyond the first catalog."
+    },
+    {
+      "url": "https://gist.githubusercontent.com/Sk2025365/0256d73f95fa221c52d9e2fc823a156b/raw",
+      "result": "Additional Bolivision endpoint tested; DNS did not resolve."
+    },
+    {
+      "url": "https://github.com/iptv-org/iptv/issues/5591",
+      "result": "Historical Bolivision and Unitel endpoints tested; inconclusive timeouts."
+    }
+  ],
+  "excluded_without_admission": [
+    {
+      "name": "Red Uno",
+      "source": "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "de482060bae47fd86d67b000b4e35c953dc09a2f4b6af3411d62521275d24eb0"
+    },
+    {
+      "name": "RED UNO LPZ",
+      "source": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "594b95b5e697b2e012f7627c83a0c1b824a672295c8396f9b674f56ce4c4dd6f"
+    },
+    {
+      "name": "RED UNO SCZ HD",
+      "source": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "bc3245517208d05707dd485aaeb38a6804eeff1cdc885c39d293508b6b14f6fc"
+    },
+    {
+      "name": "RED UNO LP",
+      "source": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "4341b36c4d945a361bc20d6fcd3447f614a3e9f42b00844e55367f956efbfa2c"
+    },
+    {
+      "name": "ATB BOLIVIA",
+      "source": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "0418468c7b42698b5605d1cc211301483e53e15034c0899cfef68c8d056e42fd"
+    },
+    {
+      "name": "BOLIVISION LPZ HD",
+      "source": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "57e54da762b49e4c578c2f25e6eb304c570c663df4bc8264172c458f05ba18b2"
+    },
+    {
+      "name": "BOLIVISION LPZ SD",
+      "source": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "a76794bf94cfb037ee2d95f213e9aaa5d134c44bcd8eb4c22a3f8aa0ab9f87c3"
+    },
+    {
+      "name": "BOLIVISION SCZ HD",
+      "source": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "8ca6c086351a1022bbfac6c1215aa0744042329b51e0691e402b776823b52c27"
+    },
+    {
+      "name": "BOLIVISION SCZ SD",
+      "source": "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "7a2dcbf8e5ad5fd867fbaa77eb3a0299cbf0e321f0149b68eeba74ae7d3ae04d"
+    },
+    {
+      "name": "RED UNO",
+      "source": "https://raw.githubusercontent.com/RaulBravo343/2023.m3u/main/README.md",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "c7bc16b1a08b13e34939746181772aae298092b8e17da4f3bd57e2a2ffa85d38"
+    },
+    {
+      "name": "UNITEL",
+      "source": "https://raw.githubusercontent.com/RaulBravo343/2023.m3u/main/README.md",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "dea115a4689965816ac56430a1f3a7415dbe00a7e47c316f5372611ae0201f13"
+    },
+    {
+      "name": "RED UNO LPZ",
+      "source": "https://raw.githubusercontent.com/codemonchit0/canales-digitales-de-bolivia-iptv-hd/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "594b95b5e697b2e012f7627c83a0c1b824a672295c8396f9b674f56ce4c4dd6f"
+    },
+    {
+      "name": "RED UNO SCZ HD",
+      "source": "https://raw.githubusercontent.com/codemonchit0/canales-digitales-de-bolivia-iptv-hd/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "bc3245517208d05707dd485aaeb38a6804eeff1cdc885c39d293508b6b14f6fc"
+    },
+    {
+      "name": "RED UNO LP",
+      "source": "https://raw.githubusercontent.com/codemonchit0/canales-digitales-de-bolivia-iptv-hd/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "4341b36c4d945a361bc20d6fcd3447f614a3e9f42b00844e55367f956efbfa2c"
+    },
+    {
+      "name": "ATB BOLIVIA",
+      "source": "https://raw.githubusercontent.com/codemonchit0/canales-digitales-de-bolivia-iptv-hd/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "a7bcebb4d2ec57de9c23349b400a3e7657074d1f28c50220f04e88546cdb4216"
+    },
+    {
+      "name": "BOLIVISION LPZ HD",
+      "source": "https://raw.githubusercontent.com/codemonchit0/canales-digitales-de-bolivia-iptv-hd/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "2adf4f95d0e83483763b95ee19533b685b30cc74cec6e88339beb2de94073b7f"
+    },
+    {
+      "name": "BOLIVISION LPZ SD",
+      "source": "https://raw.githubusercontent.com/codemonchit0/canales-digitales-de-bolivia-iptv-hd/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "a76794bf94cfb037ee2d95f213e9aaa5d134c44bcd8eb4c22a3f8aa0ab9f87c3"
+    },
+    {
+      "name": "BOLIVISION SCZ HD",
+      "source": "https://raw.githubusercontent.com/codemonchit0/canales-digitales-de-bolivia-iptv-hd/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "8ca6c086351a1022bbfac6c1215aa0744042329b51e0691e402b776823b52c27"
+    },
+    {
+      "name": "BOLIVISION SCZ SD",
+      "source": "https://raw.githubusercontent.com/codemonchit0/canales-digitales-de-bolivia-iptv-hd/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u",
+      "reason": "token_or_temporary_session",
+      "url_sha256": "7a2dcbf8e5ad5fd867fbaa77eb3a0299cbf0e321f0149b68eeba74ae7d3ae04d"
+    }
+  ],
+  "network_checks": [
+    {
+      "url": "http://136.243.3.70:1935/Bolivision/Bolivision/chunklist_w1258803449.m3u8",
+      "name_upstream": "Bolivision",
+      "provenance": [
+        "https://gist.githubusercontent.com/fiksani/9827055b019258cc5f7988c483e229cf/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:34.267198+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.0,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://136.243.3.70:1935/RedUno/RedUno/chunklist_w372299009.m3u8",
+      "name_upstream": "Red Uno",
+      "provenance": [
+        "https://gist.githubusercontent.com/fiksani/9827055b019258cc5f7988c483e229cf/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:34.286412+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.0,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://136.243.3.70:1935/RtpBolivia/RtpBolivia/playlist.m3u8",
+      "name_upstream": "RTP",
+      "provenance": [
+        "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw",
+        "https://raw.githubusercontent.com/RaulBravo343/2023.m3u/main/README.md",
+        "https://gist.githubusercontent.com/fiksani/9827055b019258cc5f7988c483e229cf/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:13.306398+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.01,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://136.243.3.70:1935/Unitel/Unitel/chunklist.m3u8",
+      "name_upstream": "Unitel",
+      "provenance": [
+        "https://gist.githubusercontent.com/fiksani/9827055b019258cc5f7988c483e229cf/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:34.536893+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.01,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://136.243.3.70:1935/Unitel/Unitel/chunklist_w1949818179_DVR.m3u8",
+      "name_upstream": "Unitel",
+      "provenance": [
+        "https://gist.githubusercontent.com/fiksani/9827055b019258cc5f7988c483e229cf/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:35.314992+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.0,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://15.204.246.24:8080/ATBHD/index.m3u8",
+      "name_upstream": "ATB La Paz (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:13.812183+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.34,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://15.204.246.24:8080/BolivisionHD/index.m3u8",
+      "name_upstream": "Bolivision (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:17.554585+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.33,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://15.204.246.24:8080/CTVHD/index.m3u8",
+      "name_upstream": "CTV (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:18.871488+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.39,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://15.204.246.24:8080/RTPSD/index.m3u8",
+      "name_upstream": "RTP (576p) [Geo-blocked]",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:28.120937+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.33,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://15.204.246.24:8080/RedUnoLPZHD/index.m3u8",
+      "name_upstream": "Red Uno La Paz (1080p) [Geo-blocked]",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:28.075083+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.31,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://15.204.246.24:8080/RedUnoSCZHD/index.m3u8",
+      "name_upstream": "Red Uno (1080p) [Geo-blocked]",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:27.708774+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.37,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://158.172.155.130:8000/play/a0e7/index.m3u8",
+      "name_upstream": "Gigavision (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:32.220144+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 0.8,
+      "catalog_action": "not_added",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "ab3659965d6fae2763da2a5c9885dbef0307b00e4be1249343e14fee617e63de"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 467,
+        "target_duration": 3.0,
+        "sha256": "c06e4fa711c935ac36399cc1e37009bcde3b2b8495e3e4dc53943e446d90c2ac"
+      }
+    },
+    {
+      "url": "http://159.89.238.35:8000/play/a072/index.m3u8",
+      "name_upstream": "RED UNO Santa Cruz (foro)",
+      "provenance": [
+        "https://sultanovic.info/forum/25-2339-92"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:38:50.855048+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.12,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://159.89.238.35:8000/play/a073/index.m3u8",
+      "name_upstream": "RED UNO (foro)",
+      "provenance": [
+        "https://sultanovic.info/forum/25-2339-92"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:38:50.855707+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.12,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://159.89.238.35:8000/play/a0bf/index.m3u8",
+      "name_upstream": "UNITEL La Paz (foro)",
+      "provenance": [
+        "https://sultanovic.info/forum/25-2339-92"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:38:50.854381+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.12,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://186.121.206.197/live/daniel/index.m3u8",
+      "name_upstream": "ATB La Paz",
+      "provenance": [
+        "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw",
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u",
+        "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:12.763707+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.54,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://190.181.18.82:4111/play/a005/index.m3u8",
+      "name_upstream": "Red Uno (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:23.320020+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.45,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://190.181.18.82:4111/play/a006/index.m3u8",
+      "name_upstream": "Red Uno Santa Cruz (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:23.517446+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 2.83,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "8b2196fec775d52a50d7278abaab93caff33306e68c43ec7ca3abf269e94aa01"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 52,
+        "target_duration": 3.0,
+        "sha256": "264ed9c620d4906239a191899aea59329228354951031c2be4885419c926f5b4"
+      }
+    },
+    {
+      "url": "http://190.181.61.93:8000/play/1909/index.m3u8",
+      "name_upstream": "Unitel (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:30.281370+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 3.99,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "22b9119964fb649eb9e8cc6faedc89650d87de000902a88185278b41c626165a"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 446,
+        "target_duration": 3.0,
+        "sha256": "7b5f73bcf6fb177509eefc4883b7b74f8625f480d4f5988a05cd9e5103726c9a"
+      }
+    },
+    {
+      "url": "http://190.181.61.93:8000/play/a001/index.m3u8",
+      "name_upstream": "Bolivia TV (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:28.455900+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 2.6,
+      "catalog_action": "not_added",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "b9b934fb091fa5c738740057ef48346841184af37686fe42eb0829899dfcc9aa"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 455,
+        "target_duration": 3.0,
+        "sha256": "fe6bbffd72ab1919810ecf1c4e6965373ccfa1906363730a380bb7b872afeb29"
+      }
+    },
+    {
+      "url": "http://190.181.61.93:8000/play/a002/index.m3u8",
+      "name_upstream": "Red Uno (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:29.613621+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 3.75,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "0776114a92b4de0d3723c01e4d3aae374ba44607e525d656c31ad813c676d1c3"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 458,
+        "target_duration": 3.0,
+        "sha256": "daeeac4a1a2f10ddcc2ced7eed0f38d39363555151be096cd3fb50f91dbd020f"
+      }
+    },
+    {
+      "url": "http://190.181.61.93:8000/play/a003/index.m3u8",
+      "name_upstream": "Red Uno La Paz (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:29.047056+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 3.17,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "0f3c5edca6af25a3c21229824161321a68c4337bb0fbb08f6bb778db4d054b83"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 457,
+        "target_duration": 3.0,
+        "sha256": "d5e313647829ed2c32f4fe073bb687bd7edbf50bf075700ace3bb347c07ed8b3"
+      }
+    },
+    {
+      "url": "http://190.181.61.93:8000/play/a00n/index.m3u8",
+      "name_upstream": "RTP (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:31.052868+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 2.46,
+      "catalog_action": "not_added",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "fb789e46b042c93740256ca86281e24b3870f02c2d15adf9feaa24a43b5b8044"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 454,
+        "target_duration": 3.0,
+        "sha256": "ec8109ef5179eefb955404ddb291fd72d177b9c052cc8b8d599e27a57c5cbd55"
+      }
+    },
+    {
+      "url": "http://190.60.39.195:8000/play/a01r/index.m3u8",
+      "name_upstream": "Unitel La Paz (576p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:26.987074+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.4,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "http://200.58.160.67:8081/envivo/bolivision/playlist.m3u8",
+      "name_upstream": "Bolivision La Paz",
+      "provenance": [
+        "https://github.com/iptv-org/iptv/issues/5591"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:39:00.979427+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.01,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://200.58.160.67:8081/envivo/unitelhd/unitelhd/unitelhd/playlist.m3u8",
+      "name_upstream": "UNITEL señal en vivo 3",
+      "provenance": [
+        "https://github.com/iptv-org/iptv/issues/5591"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:39:00.978941+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.01,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://boliviatv1.srfms.com:5735/live/livestream/playlist.m3u8",
+      "name_upstream": "Bolivia TV",
+      "provenance": [
+        "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw",
+        "https://gist.githubusercontent.com/elfenderes/16ec4ac5b1dfd9d59d02e3f4d9a82d49/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:12.766552+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 0.31,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "http://btvboliviatv.srfms.com:6568/live/livestream/chunklist.m3u8",
+      "name_upstream": "Bolivia TV Deportes 7.2",
+      "provenance": [
+        "https://gist.githubusercontent.com/fiksani/9827055b019258cc5f7988c483e229cf/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:34.102278+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 0.18,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "https://5ca3e84a76d30.streamlock.net/boliviatv2/videoboliviatv2/playlist.m3u8",
+      "name_upstream": "Bolivia TV 7.2",
+      "provenance": [
+        "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:12.767655+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.71,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://5ca9af4645e15.streamlock.net/boliviatv/videoboliviatv/chunklist.m3u8",
+      "name_upstream": "Bolivia TV 7.1",
+      "provenance": [
+        "https://gist.githubusercontent.com/fiksani/9827055b019258cc5f7988c483e229cf/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:33.932164+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.6,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://alba-bo-bolivision-bolivision.stream.mediatiquestream.com/index.m3u8",
+      "name_upstream": "Bolivision (Bolivia)",
+      "provenance": [
+        "https://gist.github.com/Sk2025365/0256d73f95fa221c52d9e2fc823a156b"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:39:00.979211+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 0.03,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "https://alba-bo-bolivision-upptv.stream.mediatiquestream.com/index.m3u8",
+      "name_upstream": "UPP TV/Bolivisión SCZ (720p) [Not 24/7]",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:27.384280+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 0.04,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "https://alba-bo-bolivision-upptv.stream.mediatiquestream.com/original.m3u8",
+      "name_upstream": "BO: BOLIVISION",
+      "provenance": [
+        "https://raw.githubusercontent.com/PABLOPOM/m3u/main/TELEVISION9"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:33.891606+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 0.04,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "https://cdn.digital.com.bo/__cl/cg:sworigin2/__c/ATB/__op/hls-default/__f/index.m3u8",
+      "name_upstream": "ATB Santa Cruz",
+      "provenance": [
+        "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:12.765320+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.45,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://cdn.digital.com.bo/__cl/cg:sworigin2/__c/BOLIVISION/__op/hls-default/__f/index.m3u8",
+      "name_upstream": "Bolivision Santa Cruz",
+      "provenance": [
+        "https://github.com/iptv-org/iptv/issues/5591"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:39:01.010697+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.17,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://cdn.digital.com.bo/__cl/cg:sworigin2/__c/UNITEL/__op/hls-default/__f/index.m3u8",
+      "name_upstream": "Unitel Santa Cruz (1080p) [Not 24/7]",
+      "provenance": [
+        "https://iptvcat.com/bolivia",
+        "https://list.iptvcat.com/my_list/s/7d76567bf39b81d2c820a5421f9a7ae3.m3u8"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:40:17.487967+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 10.2,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://d135ohnuotzzyo.cloudfront.net/index.m3u8",
+      "name_upstream": "Bolivision (1080p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u",
+        "https://redbolivision.tv.bo/envivo-canal-5"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:17.885521+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "restricted",
+      "elapsed_seconds": 0.47,
+      "catalog_action": "preserve_existing",
+      "diagnostic": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://d135ohnuotzzyo.cloudfront.net/index_1.m3u8",
+      "name_upstream": "Bolivisión",
+      "provenance": [
+        "https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:33.364179+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "restricted",
+      "elapsed_seconds": 0.49,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://d1mws3umreue1g.cloudfront.net/index.m3u8",
+      "name_upstream": "Bolivision Santa Cruz (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:18.358906+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "restricted",
+      "elapsed_seconds": 0.51,
+      "catalog_action": "preserve_existing",
+      "diagnostic": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://d2byzrnrdb259r.cloudfront.net/hls/live.m3u8",
+      "name_upstream": "BOLIVISION",
+      "provenance": [
+        "https://raw.githubusercontent.com/RaulBravo343/2023.m3u/main/README.md"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:33.851460+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 0.04,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "https://d3mghbm9e5zfap.cloudfront.net/Bolivision/2af819d7c8ab1c07658d1575e55800e5.sdp/playlist.m3u8",
+      "name_upstream": "Bolivisión LPZ (480p)",
+      "provenance": [
+        "https://iptvcat.com/bolivia",
+        "https://list.iptvcat.com/my_list/s/90db9cc9d94ce4671c76f7eef5542afb.m3u8"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:40:17.442494+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 0.04,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "https://d3mghbm9e5zfap.cloudfront.net/UppTVBO/27b541ec946453e75f25a7d489c86168.sdp/playlist.m3u8",
+      "name_upstream": "UPP TV/Bolivisión SCZ (720p) [Not 24/7]",
+      "provenance": [
+        "https://iptvcat.com/bolivia",
+        "https://list.iptvcat.com/my_list/s/82b2e07631edc3defba9a8f0acf5617f.m3u8"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:40:17.443384+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 0.04,
+      "catalog_action": "not_added",
+      "diagnostic": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "https://hls.tvabierta.net/hls/boliviatv.m3u8",
+      "name_upstream": "Bolivia TV (720p) [Not 24/7]",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:28.382835+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 1.9,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "f54781c8e259918e0e5cbd2773107c0222fb4cdf117108b0f7404219c096954f"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 5156,
+        "target_duration": 3.0,
+        "sha256": "12cee32d6b13a70613dc09a42928d30cc1f39701208d293563a445c49fef55f3"
+      }
+    },
+    {
+      "url": "https://lbgo.bozztv.com/ssh101/ssh101/tvjoaquiniana26/playlist.m3u8",
+      "name_upstream": "Unitel Cochabamba (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:25.471934+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.44,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://live.ctvbolivia.com/hls/ctv.m3u8",
+      "name_upstream": "CTV",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:20.134191+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.63,
+      "catalog_action": "preserve_existing",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://master.tucableip.com/HUB/video.m3u8",
+      "name_upstream": "Public player: digital.reduno.com.bo",
+      "provenance": [
+        "https://digital.reduno.com.bo/"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:44.270977+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.78,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://master.tucableip.com/HUB1/video.m3u8",
+      "name_upstream": "Public player: digital.reduno.com.bo",
+      "provenance": [
+        "https://digital.reduno.com.bo/"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:44.286478+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.77,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://master.tucableip.com/gigavision/playlist.m3u8",
+      "name_upstream": "Gigavision",
+      "provenance": [
+        "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:13.102570+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.71,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://master.tucableip.com/muxredunosc/index.m3u8",
+      "name_upstream": "Red Uno Santa Cruz",
+      "provenance": [
+        "https://iptvcat.com/bolivia",
+        "https://list.iptvcat.com/my_list/s/cf11f162ec03a01e09fa01a53e104629.m3u8"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:40:17.442972+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.72,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://master.tucableip.com/tvhome/index.m3u8",
+      "name_upstream": "UNITEL Santa Cruz",
+      "provenance": [
+        "https://iptvcat.com/bolivia",
+        "https://list.iptvcat.com/my_list/s/aefdfdbba387da16b13a0fecc14a636f.m3u8"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:40:50.065474+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 2.77,
+      "catalog_action": "not_added",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "f8c86253c65aab01939cc20e6397c3d24d32273d0030cbe179a3a5800ad92c83"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 30277,
+        "target_duration": 7.0,
+        "sha256": "5980ce18c65337ca3861986a33b0955ba5690870f7d45e1d8b7fa25d952c752e"
+      }
+    },
+    {
+      "url": "https://mdstrm.com/live-stream-playlist/691f2aeb5ac95d286c49af8d.m3u8",
+      "name_upstream": "Unitel Cochabamba (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:25.907509+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 1.8,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "a0d1c88c3bb930fcb5a9577afb884e52ac05c310c38b7c3cd4fd1cb9e20ee126"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 510610,
+        "target_duration": 6.0,
+        "sha256": "2d5589dea84eba590ffee12b65969b322de859e9ad442c3cb0553bae344ff39b"
+      }
+    },
+    {
+      "url": "https://mdstrm.com/live-stream-playlist/6928b14aaa768aad947bf65d.m3u8",
+      "name_upstream": "Unitel La Paz (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:26.345079+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 1.78,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "59f39bd77681c7e9d0bf8dbe60e7e252ddf8a4e2e60e0aa42f4a11ad2e777d06"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 1254312,
+        "target_duration": 6.0,
+        "sha256": "0a0cdabe5ca8f6bb7e69680b1feba1d44f87c740fc0fce4b24eb3cad8a6df397"
+      }
+    },
+    {
+      "url": "https://mdstrm.com/live-stream-playlist/692b7e7ac84183fcf9e3462d.m3u8",
+      "name_upstream": "Unitel Santa Cruz (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:27.079944+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 1.97,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "d77d6f1ce1b96b101aa4c98328d554e10593f862234186c65e1c40c602d01c20"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 1254357,
+        "target_duration": 6.0,
+        "sha256": "29e8c4755db43376128e9ca9e61b3dcf90f2a184b2e5e0e56809f08bb2822dc5"
+      }
+    },
+    {
+      "url": "https://rtp.noxun.net/hls/stream.m3u8",
+      "name_upstream": "RTP",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:25.397109+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 1.68,
+      "catalog_action": "not_added",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "f97f5113dc822248f9482d04ebcfbe026be3106cb3cf00e380112b7981e35f81"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 1320,
+        "target_duration": 3.0,
+        "sha256": "e8c565a14d915a1b3cb21736233b5e9fce10d28b9c48fea00bf7b162d11ed6f6"
+      }
+    },
+    {
+      "url": "https://rtp.noxun.net/hls480/stream2.m3u8",
+      "name_upstream": "RTP (480p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:25.323979+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 1.66,
+      "catalog_action": "not_added",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 257748,
+        "sha256": "cbc0cbaaf8bba29cbc6acd8aa7f81c59b22e83e4a1ded7c0d8f6b4453c45e8d0"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 20167,
+        "target_duration": 6.0,
+        "sha256": "dfd3be355d8b366a6a2ce8da750b592f181cbcf189a7292253b4470b1be5661a"
+      }
+    },
+    {
+      "url": "https://rtp.noxun.net/hls720/stream3.m3u8",
+      "name_upstream": "RTP (576p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u",
+        "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:23.774548+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 1.7,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "0a07f6a7c2acba764e664201b26c91df0087debc235e19249a6174dd3a5623b1"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 333926,
+        "target_duration": 6.0,
+        "sha256": "488547d42036e2ddfccc766604c8d242671be2193d87f48f7fda6bff6613d460"
+      }
+    },
+    {
+      "url": "https://stream.atb.com.bo/live/daniel/index.m3u8",
+      "name_upstream": "ATB La Paz",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:14.148719+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 3.41,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "07eec9c23d93ec41862a99759723e254a2cdd3dfa061fd6b3c4a6ee57c588450"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 2845,
+        "target_duration": 11.0,
+        "sha256": "9a6eb45e801dcf7a95f0c6b182068e58aa65eeeda4dbb0d5dec95edfdeb2a794"
+      }
+    },
+    {
+      "url_omitted": "temporary_or_credentialed_url",
+      "url_sha256": "de482060bae47fd86d67b000b4e35c953dc09a2f4b6af3411d62521275d24eb0",
+      "host": "streamer03.digital.com.bo",
+      "name_upstream": "Red Uno",
+      "provenance": [
+        "https://gist.githubusercontent.com/josezambrana/d2a0cc38fc24eea1aaecf5e676360dfa/raw"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:38:50.853222+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "inconclusive",
+      "elapsed_seconds": 11.25,
+      "catalog_action": "not_added",
+      "eligibility": "excluded_temporary_session",
+      "diagnostic": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://streaming.ctvbolivia.com/hlsweb/ctv.m3u8",
+      "name_upstream": "CTV (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u",
+        "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:19.260923+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.87,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://tv.bitstreaming.net:3348/live/gigavisionlive.m3u8",
+      "name_upstream": "Gigavision",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u",
+        "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:23.212106+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 2.18,
+      "catalog_action": "not_added",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "d1516423c1da7561b331f70ac322850df187167f7a40745c0acf81579e5b3bd4"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 13258,
+        "target_duration": 4.0,
+        "sha256": "535c182423793f23520d675547489d316b44de7d7b3262e368725ab4e08f4e3d"
+      }
+    },
+    {
+      "url": "https://tv.centaurychile.com/interactiva/streams/KIgB6QvZ0L8XaSLd3211668845221245.m3u8",
+      "name_upstream": "Red Uno (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": true,
+      "checked_utc": "2026-10-15T02:36:23.489118+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 1.83,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "43e810e383540a06bd249dbe996450be22da4b1fef91a042ea446cce7e725435"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 14417,
+        "target_duration": 2.0,
+        "sha256": "70906955fe54f9804d1bc92394eb9d022aec29232cd167ce30cb65626655e0f3"
+      }
+    },
+    {
+      "url": "https://tv2.bitstreaming.net:3576/live/gigavisionlplive.m3u8",
+      "name_upstream": "RED GIGAVISION LPZ HD",
+      "provenance": [
+        "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:33.020962+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 2.29,
+      "catalog_action": "not_added",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "f863cfb8530d5db95229dfc1117334f48ce9c548fc78718d2266576bd70332e4"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 321104,
+        "target_duration": 4.0,
+        "sha256": "59c910dd05db39c694baa2d41d1365e5d55734870a927659f9fad5a562d23968"
+      }
+    },
+    {
+      "url": "https://tv2.bitstreaming.net:3576/multi_live/play.m3u8",
+      "name_upstream": "Gigavision (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:20.766693+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 2.75,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "ac66369b95731d1cf1036e18a9b5501dc9297a67e63766ab113b2979d0de7465"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 299950,
+        "target_duration": 4.0,
+        "sha256": "169044f7d418b84208ec505a4ccaad565f6386a5380cec3931d566aadc9f17a9"
+      }
+    },
+    {
+      "url": "https://tv3.bitstreaming.net:3680/live/zuracatvlive.m3u8",
+      "name_upstream": "Zuraca TV (720p)",
+      "provenance": [
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/bo.m3u",
+        "https://raw.githubusercontent.com/12carloshc/canales-de-bolivia-IPTV/main/canales%20de%20bolivia/canales%20de%20bolivia.m3u"
+      ],
+      "already_in_catalog": true,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:27.422939+00:00",
+      "hls_and_segment_accessible": true,
+      "network_result": "accessible",
+      "elapsed_seconds": 2.19,
+      "catalog_action": "preserve_existing",
+      "segment_sample": {
+        "http": 200,
+        "bytes": 262144,
+        "sha256": "e03602bc1aa19dec7d4981871b1a5de87f62db301784248b64871e9edd262c34"
+      },
+      "manifest": {
+        "http": 200,
+        "sequence": 113078,
+        "target_duration": 5.0,
+        "sha256": "0948a31cdda03fa783edaf3dd3bfdc9531d234ab92fc47ac94ac99d28402938a"
+      }
+    },
+    {
+      "url": "https://video1.getstreamhosting.com:1936/8224/8224/playlist.m3u8",
+      "name_upstream": "BOLIVIA TV",
+      "provenance": [
+        "https://raw.githubusercontent.com/RaulBravo343/2023.m3u/main/README.md"
+      ],
+      "already_in_catalog": false,
+      "app_supports_alternatives_for_this_family": false,
+      "checked_utc": "2026-10-15T02:36:33.512348+00:00",
+      "hls_and_segment_accessible": false,
+      "network_result": "not_found",
+      "elapsed_seconds": 0.59,
+      "catalog_action": "not_added",
+      "diagnostic": "HTTP Error 404: Not Found"
+    }
+  ],
+  "decoded_candidate_not_admitted": {
+    "url": "https://master.tucableip.com/tvhome/index.m3u8",
+    "upstream_label": "Unitel Santa Cruz (IPTV Cat)",
+    "provenance": [
+      "https://iptvcat.com/bolivia",
+      "https://list.iptvcat.com/my_list/s/aefdfdbba387da16b13a0fecc14a636f.m3u8"
+    ],
+    "proposed_id_if_identity_were_confirmed": "UnitelSantaCruz.bo@SD",
+    "formats": [
+      {
+        "index": 0,
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "90000/1",
+        "sample_rate": null,
+        "channels": null,
+        "tags": null
+      },
+      {
+        "index": 1,
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "width": null,
+        "height": null,
+        "r_frame_rate": "0/0",
+        "sample_rate": "48000",
+        "channels": 2,
+        "tags": null
+      }
+    ],
+    "av_decoding_passed": true,
+    "signal_identity_confirmed": false,
+    "catalog_action": "not_added",
+    "samples": [
+      {
+        "index": 1,
+        "started_utc": "2026-10-15T02:46:57.027308+00:00",
+        "reused_verified_download": true,
+        "download": {
+          "started_utc": "2026-10-15T02:45:13.650656+00:00",
+          "finished_utc": "2026-10-15T02:45:27.988190+00:00",
+          "declared_media_seconds": 34.52,
+          "segments": [
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/44/48-06910.ts",
+              "http": 200,
+              "duration": 6.91,
+              "bytes": 866304,
+              "sha256": "354740a5baa4fc37b9ef22b76267c0237187ff529b496fcad95384b10e5198ea"
+            },
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/44/55-06900.ts",
+              "http": 200,
+              "duration": 6.9,
+              "bytes": 1242304,
+              "sha256": "2bdf39a26d562f6edb5bf0d53b9144b4f53bcecd5eeef663d385a07f0f6b03c8"
+            },
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/45/02-06910.ts",
+              "http": 200,
+              "duration": 6.91,
+              "bytes": 1049792,
+              "sha256": "9600587553023a3dbc9b89c4cc8046ea0597f11ea5c4369fb2fc560ba220bbd1"
+            },
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/45/09-06891.ts",
+              "http": 200,
+              "duration": 6.891,
+              "bytes": 1106944,
+              "sha256": "c7ab0fe8620d9f0d77c6a4496f98cd2631e88de1324f82d0a7d1a8b40ba61330"
+            },
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/45/15-06909.ts",
+              "http": 200,
+              "duration": 6.909,
+              "bytes": 926464,
+              "sha256": "a1fe09d07dd02e0da4a28f516e7afc3e32461b761cded04c0e0e7b293d49ab1e"
+            }
+          ],
+          "capture_bytes": 5191808,
+          "capture_sha256": "bfee02342279dd34911773f25ca0e551ba6d01a297a45a30005b68acd386743e",
+          "tls_verification": true,
+          "sequence_before": 30314,
+          "sequence_after": 30317,
+          "last_segment_before": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/45/02-06910.ts",
+          "last_segment_after": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/45/22-06900.ts"
+        },
+        "formats": [
+          {
+            "index": 0,
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "90000/1",
+            "sample_rate": null,
+            "channels": null,
+            "tags": null
+          },
+          {
+            "index": 1,
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null,
+            "r_frame_rate": "0/0",
+            "sample_rate": "48000",
+            "channels": 2,
+            "tags": null
+          }
+        ],
+        "finished_utc": "2026-10-15T02:46:58.199618+00:00",
+        "exit_code": 0,
+        "streams": {
+          "0": {
+            "time_base": [
+              1,
+              90000
+            ],
+            "media_type": "video",
+            "decoded_frames": 869,
+            "unique_hashes": 869,
+            "decoded_seconds": 29.96,
+            "packet_duration_seconds": 0.0097,
+            "span_seconds": 29.96
+          },
+          "1": {
+            "time_base": [
+              1,
+              48000
+            ],
+            "media_type": "audio",
+            "decoded_frames": 1406,
+            "unique_hashes": 1406,
+            "decoded_seconds": 29.9947,
+            "packet_duration_seconds": 29.9947,
+            "span_seconds": 29.9963
+          }
+        },
+        "decoded_framehash_sha256": "4b10bbae394849fec8287b0e095d394b66e44506b435b1deb08a3bc7d81e90f0",
+        "warnings": "[swscaler @ 000001b65c24bd00] deprecated pixel format used, make sure you did set range correctly\r\n",
+        "live": {
+          "sequence_before": 30314,
+          "sequence_after": 30317,
+          "last_segment_before": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/45/02-06910.ts",
+          "last_segment_after": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/45/22-06900.ts"
+        },
+        "passed": true
+      },
+      {
+        "index": 2,
+        "started_utc": "2026-10-15T02:46:58.200775+00:00",
+        "download": {
+          "started_utc": "2026-10-15T02:46:59.473448+00:00",
+          "finished_utc": "2026-10-15T02:47:13.751545+00:00",
+          "declared_media_seconds": 34.52,
+          "segments": [
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/46/31-06910.ts",
+              "http": 200,
+              "duration": 6.91,
+              "bytes": 1215232,
+              "sha256": "770b4b5e6709d4351e7646efdec7f881c2d493866c0fbc7392a9ba09aa2fec45"
+            },
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/46/38-06910.ts",
+              "http": 200,
+              "duration": 6.91,
+              "bytes": 1082880,
+              "sha256": "2544ad56660cf7172e15c7386e115f4147e9a72d8d61e673d1b2bd33f0223c5f"
+            },
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/46/45-06890.ts",
+              "http": 200,
+              "duration": 6.89,
+              "bytes": 1302464,
+              "sha256": "1103b7d6a1ccfec9c73bc254a9415e220abda645072a05e167400218375247fa"
+            },
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/46/52-06912.ts",
+              "http": 200,
+              "duration": 6.912,
+              "bytes": 1097920,
+              "sha256": "10b00e24bdcafdf64e382a1d28be5ede2a5a39027caea0e90c1aa2f0e722c5d4"
+            },
+            {
+              "url": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/46/59-06898.ts",
+              "http": 200,
+              "duration": 6.898,
+              "bytes": 1088896,
+              "sha256": "952a75978faf2795d7d523383a7f7a8d74d04945da214876ae8b5daf7610cb65"
+            }
+          ],
+          "capture_bytes": 5787392,
+          "capture_sha256": "3dc982bc86f048b912a1ec6f89b11ecc2d04befb5f28e5e08e14c6eedae2038b",
+          "tls_verification": true,
+          "sequence_before": 30330,
+          "sequence_after": 30332,
+          "last_segment_before": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/46/52-06912.ts",
+          "last_segment_after": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/47/06-06910.ts"
+        },
+        "formats": [
+          {
+            "index": 0,
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "90000/1",
+            "sample_rate": null,
+            "channels": null,
+            "tags": null
+          },
+          {
+            "index": 1,
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null,
+            "r_frame_rate": "0/0",
+            "sample_rate": "48000",
+            "channels": 2,
+            "tags": null
+          }
+        ],
+        "finished_utc": "2026-10-15T02:47:14.989684+00:00",
+        "exit_code": 0,
+        "streams": {
+          "0": {
+            "time_base": [
+              1,
+              90000
+            ],
+            "media_type": "video",
+            "decoded_frames": 869,
+            "unique_hashes": 869,
+            "decoded_seconds": 29.97,
+            "packet_duration_seconds": 0.0097,
+            "span_seconds": 29.97
+          },
+          "1": {
+            "time_base": [
+              1,
+              48000
+            ],
+            "media_type": "audio",
+            "decoded_frames": 1400,
+            "unique_hashes": 1400,
+            "decoded_seconds": 29.8667,
+            "packet_duration_seconds": 29.8667,
+            "span_seconds": 29.9823
+          }
+        },
+        "decoded_framehash_sha256": "ab7a6a494acb1d7380c4502adfa5d95409cfb264d9431e326756053fe9110c7f",
+        "warnings": "[swscaler @ 000001e4372ca280] deprecated pixel format used, make sure you did set range correctly\r\n",
+        "live": {
+          "sequence_before": 30330,
+          "sequence_after": 30332,
+          "last_segment_before": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/46/52-06912.ts",
+          "last_segment_after": "https://master.tucableip.com/tvhome/tracks-v1a1/2026/10/15/02/47/06-06910.ts"
+        },
+        "passed": true
+      }
+    ],
+    "identity_checks": [
+      {
+        "reference_url": "https://mdstrm.com/live-stream-playlist/692b7e7ac84183fcf9e3462d.m3u8",
+        "method": "Normalized correlation of 20 ms RMS audio envelopes, 8 kHz mono PCM; no screenshots or visual checks.",
+        "result": "inconclusive_no_audio_match",
+        "comparison": {
+          "correlation": 0.179346,
+          "candidate_lag_seconds": 44.68,
+          "overlap_seconds": 45.32
+        },
+        "limitations": [
+          "Different delays and regional programming can prevent correlation; a negative match does not prove a different channel."
+        ]
+      },
+      {
+        "reference_url": "http://190.181.61.93:8000/play/1909/index.m3u8",
+        "method": "Normalized correlation of RMS audio envelopes from concurrent captures; 20 ms samples at 8 kHz mono. Primary reference capture ended with a network timeout; its complete downloaded portion was decoded locally.",
+        "result": "inconclusive_no_audio_match",
+        "comparisons": [
+          {
+            "correlation": 0.167589,
+            "candidate_lag_seconds": 81.42,
+            "overlap_seconds": 88.54,
+            "envelope_ms": 20
+          },
+          {
+            "correlation": 0.230887,
+            "candidate_lag_seconds": 81.4,
+            "overlap_seconds": 88.5,
+            "envelope_ms": 100
+          },
+          {
+            "correlation": 0.430261,
+            "candidate_lag_seconds": 81.0,
+            "overlap_seconds": 88.5,
+            "envelope_ms": 500
+          }
+        ],
+        "reference_decoded_seconds": 88.552625,
+        "candidate_decoded_seconds": 179.710625,
+        "limitations": [
+          "The reference capture ended with a network timeout. Its downloaded portion had corrupt packets and timestamp discontinuities. This does not establish that the candidate is a different channel."
+        ]
+      }
+    ],
+    "admission_reason": "Public label alone was not enough to confirm the required signal; both audio comparisons remained inconclusive."
+  },
+  "catalog_validation": {
+    "android_reader": "Actual compiled BOBTV M3uParser and ChannelNumbers from the existing release build; 13 channels, 16 sources, same IDs/names/groups/numbers/priorities. No Android build or source edits.",
+    "monitor_reader": "shared/catalog.ts parsed with Node.js; 13 channels and 16 sources.",
+    "typecheck": "passed",
+    "build": "passed",
+    "local_tests": {
+      "total": 59,
+      "passed": 58,
+      "failed": 1,
+      "failure": "Pre-existing tests/cli.test.ts passes an absolute Windows drive path to node --import and fails before the CLI starts. An ignored invocation-only adapter progressed to a sandbox uv_os_get_passwd/ENOMEM failure. Neither tracked tests nor runtime were changed.",
+      "linux_reference_workflow": "https://github.com/TylorDev/bobtv-canales/actions/runs/38672148222",
+      "linux_reference_scope": "Same unchanged parser, monitor and test code; that existing Linux workflow passed all 59 tests, monitor, build and deployment before this documentation-only change."
+    }
+  }
+}

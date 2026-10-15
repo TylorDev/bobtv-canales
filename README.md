@@ -35,6 +35,8 @@ No se necesitan usuarios, contraseñas ni tokens de GitHub en el TV box. La app 
 
 ## Fuentes alternativas verificadas
 
+La [búsqueda del 14 de octubre de 2026](docs/FUENTES_IPTV_2026-10-14.md) comprobó 65 endpoints y conserva **13 canales y 16 fuentes**. Ninguna alternativa nueva reunió la verificación completa: una candidata etiquetada como Unitel Santa Cruz decodificó audio y video, pero su identidad quedó inconclusa. No se añadieron enlaces fallidos ni señales sin confirmar. Consulta la [evidencia JSON](verificacion/fuentes-2026-10-14.json).
+
 El 13 de octubre de 2026 se agregaron **tres fuentes** de Unitel y Red Uno Bolivia tras comprobar HLS, segmentos reales, decodificación de audio/video y avance del directo. El catálogo contiene **13 canales y 16 fuentes**. Consulta la [verificación y los descartes](docs/FUENTES_IPTV_2026-10-13.md) y el [informe JSON](verificacion/fuentes-2026-10-13.json).
 
 Se priorizan las señales nuevas de UNITEL Santa Cruz y RED UNO Santa Cruz. RED UNO mantiene primero su fuente HTTPS con AAC y agrega La Paz como alternativa. Todas las direcciones originales siguen disponibles en el archivo.
