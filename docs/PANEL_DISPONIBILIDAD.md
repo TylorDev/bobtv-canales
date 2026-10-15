@@ -38,6 +38,8 @@ No ejecutar ambas operaciones de configuración sin comprobar el estado existent
 
 El workflow `.github/workflows/pages.yml` se ejecuta al cambiar el catálogo, la web, el monitor, las pruebas o su configuración en `main`; también manualmente y con `*/5 * * * *` (UTC). Usa Node.js 24, `npm ci`, comprobación de TypeScript, pruebas, monitor, build y las acciones oficiales `configure-pages`, `upload-pages-artifact` y `deploy-pages`. Tiene permisos `contents: read`, `pages: write` e `id-token: write`. Las ejecuciones se serializan mediante un grupo de concurrencia y no cancelan un despliegue en curso. GitHub puede reemplazar una ejecución pendiente por otra más nueva.
 
+El runner se fija en `ubuntu-24.04` para conservar el entorno durante la migración de `ubuntu-latest` a Ubuntu 26.04. `configure-pages` se fija al commit de la versión 6.0.0, cuyo runtime es Node.js 24; `setup-node` configura por separado el Node.js del proyecto. Un error `Get Pages site failed / Not Found` requiere comprobar la habilitación de Pages y su origen GitHub Actions: cambiar la versión de Node.js no habilita el sitio. Las anotaciones de una ejecución anterior se conservan en su historial; el resultado vigente se comprueba en las ejecuciones posteriores.
+
 Un catálogo inválido o una excepción general abortan antes de subir el artefacto: el despliegue válido anterior se conserva. Los errores individuales de emisores son datos y no fallan el workflow. Después del despliegue se comprueban por HTTP el panel, JavaScript, CSS y JSON, verificando que el informe corresponde a esta ejecución; se reintenta durante un máximo aproximado de un minuto por la propagación de CDN.
 
 ### Frecuencia y límites de GitHub
